@@ -139,7 +139,7 @@ nav button {
     gap: 3rem;
 }
 
-.nav_log {
+.nav_logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -431,7 +431,7 @@ footer {
     width: 20rem;
 }
 
-.footer_subsscribe {
+.footer_subscribe {
     background: transparent;
     border: 1px solid var(--color-light);
     display: flex;
@@ -440,17 +440,17 @@ footer {
     width: 80%;
 }
 
-.footer_subsscritbe input {
+.footer_subscritbe input {
     background: transparent;
     color: var(--color-white);
     margin-left: 1rem;
 }
 
-.footer_subsscritbe input::placeholder {
+.footer_subscritbe input::placeholder {
     color: var(--color-white);
 }
 
-.footer_subsscritbe button {
+.footer_subscritbe button {
     background: var(--color-white);
     color: var(--color-black);
     transition: all 3ooms ease;
@@ -459,4 +459,99 @@ footer {
     font-size: 1.2rem;
 }
 
-.footer_subsscritbe button:hover {}
+.footer_subscritbe button:hover {
+    background: var(--color-light);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+footer ul li {
+    margin-bottom: 3rem;
+}
+
+footer ul li a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.footer_4 {
+    margin-bottom: 1.6rem;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem;
+    color: var(--color-white);
+    border-top: 1px solid var(--color-light);
+}
+
+/*=========== MEDIA QUERIES(TABLET) ==================*/
+.media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-tablet)
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    .lead {
+        width: 72%;
+        margin-bottom: 3rem;
+    }
+
+    section {
+        padding-bottom: var(--button-section-pading-mobile);
+    }
+
+
+    /*============== NAVBAR ================*/
+    nav {
+        background: var(--color-primary);
+    }
+
+    .nav_container {
+        position: relative;
+        width: 100vw;
+    }
+
+    .nav_logo {
+        margin-left: 2rem;
+        position: relative;
+    }
+
+    .nav_items {
+        position: fixed;
+        top: 6rem;
+        right: 0;
+        background: var(--color-white);
+        height: max-content;
+        width: 18rem;
+        box-shadow: -2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        gap: 0;
+        z-index: 3;
+    }
+
+    .nav_items li {
+        width: 100%;
+        height: 6rem;
+    }
+
+
+}
